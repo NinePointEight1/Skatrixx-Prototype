@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SKATRIXX</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content="Noah V. Schijndel"/>
+	<meta name="copyright" content=""/>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+	<link href="CSS\Design.css" type="text/css" rel="stylesheet" id="NormalStyle"/>
+	<link href="CSS\normalize.css" type="text/css" rel="stylesheet" />
+	<link href="CSS\override.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="MenuHeader">
+		<div class="MenuWrapper">
+			<div class="MenuItem" onclick="SelectItem(this, 'World');SwitchFriendlyScreen('back');">World</div>
+			<div class="MenuItemActive" onclick="SelectItem(this, 'Country');SwitchFriendlyScreen('back');">Country</div>
+			<div class="MenuItem" onclick="SelectItem(this, 'Friendly');SwitchFriendlyScreen('back');">Friendly</div>
+		</div>
+	</div>
+	<div class="RedBlockTop"></div>
+	<div class="MainDiv" style="margin-top: -100px;">
+		<div id="World">
+			<div class="TopPositions">
+				<div class="TopPositionSection">
+					<div class="NR2Image" style="background: url(CSS/Images/SheaMullen.png) no-repeat center center;background-size: 130%;"></div>
+					<div class="TopPositionsCover"></div>
+					<div class="TopPositionsPanel" style="height:85px;">2</div>
+				</div>
+				<div class="TopPositionSection">
+					<div class="NR1Image" style="background: url(CSS/Images/ChadDominguez.png) no-repeat center center;background-size: 130%;"></div>
+					<div class="TopPositionsCover"></div>
+					<div class="TopPositionsPanel" style="height:100px;">1</div>
+				</div>
+				<div class="TopPositionSection">
+					<div class="NR3Image" style="background: url(CSS/Images/DevanMaguire.png) no-repeat center center;background-size: 130%;"></div>
+					<div class="TopPositionsCover"></div>
+					<div class="TopPositionsPanel" style="height:65px;">3</div>
+				</div>
+			</div>
+			<div class="RankingResetText">Ranking resets 2 days</div>
+			<div class="RankingList RankingListWorld"></div>
+			<div class="UserRanking">
+				<div class="UserRankingImage" onclick="window.location.assign('user.html');"></div>
+				<div class="UserRankingWrapper">
+					<div class="UserRankingName">Mark Rivello</div>
+					<div class="UserRankingProgressBar"><div class="UserRankingProgress"></div></div>
+					<div class="UserRankingInfo">
+						<div class="UserRankingInfoSection" style="text-align: left;">
+							<div class="UserRankingInfoLevel">Lvl. 16</div>
+						</div>
+						<div class="UserRankingInfoSection" style="text-align: right;">
+							<div class="UserRankingInfoXP">2350 XP &#9733;</div>
+						</div>
+					</div>
+				</div>
+				<div class="UserRankingPosition" style="text-align: left;">
+					<div class="UserRankingInfoRank">#2854</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Country" class="active">
+			<div class="TopPositions">
+				<div class="TopPositionSection">
+					<div class="NR2Image" style="background: url(CSS/Images/BobHastings.png) no-repeat center center;background-size: 130%;"></div>
+					<div class="TopPositionsCover"></div>
+					<div class="TopPositionsPanel" style="height:85px;">2</div>
+				</div>
+				<div class="TopPositionSection">
+					<div class="NR1Image" style="background: url(CSS/Images/KaidenRuiz.png) no-repeat center center;background-size: 130%;"></div>
+					<div class="TopPositionsCover"></div>
+					<div class="TopPositionsPanel" style="height:100px;">1</div>
+				</div>
+				<div class="TopPositionSection">
+					<div class="NR3Image" style="background: url(CSS/Images/RobsonHaynes.png) no-repeat center center;background-size: 130%;"></div>
+					<div class="TopPositionsCover"></div>
+					<div class="TopPositionsPanel" style="height:65px;">3</div>
+				</div>
+			</div>
+			<div class="RankingResetText">Ranking resets 2 days</div>
+			<div class="RankingList RankingListCountry"></div>
+			<div class="UserRanking">
+				<div class="UserRankingImage" onclick="window.location.assign('user.html');"></div>
+				<div class="UserRankingWrapper">
+					<div class="UserRankingName">Mark Rivello</div>
+					<div class="UserRankingProgressBar"><div class="UserRankingProgress"></div></div>
+					<div class="UserRankingInfo">
+						<div class="UserRankingInfoSection" style="text-align: left;">
+							<div class="UserRankingInfoLevel">Lvl. 16</div>
+						</div>
+						<div class="UserRankingInfoSection" style="text-align: right;">
+							<div class="UserRankingInfoXP">2350 XP &#9733;</div>
+						</div>
+					</div>
+				</div>
+				<div class="UserRankingPosition" style="text-align: left;">
+					<div class="UserRankingInfoRank">#56</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Friendly">
+			<div id="PositionsScreen">
+				<div class="TopPositions">
+					<div class="TopPositionSection">
+						<div class="NR2Image" style="background: url(CSS/Images/RoyLindsey.png) no-repeat center center;background-size: 130%;"></div>
+						<div class="TopPositionsCover"></div>
+						<div class="TopPositionsPanel" style="height:85px;">2</div>
+					</div>
+					<div class="TopPositionSection">
+						<div class="NR1Image" style="background: url(CSS/Images/AlecHudson.png) no-repeat center center;background-size: 130%;"></div>
+						<div class="TopPositionsCover"></div>
+						<div class="TopPositionsPanel" style="height:100px;">1</div>
+					</div>
+					<div class="TopPositionSection">
+						<div class="NR3Image" style="background: url(CSS/Images/OrsonMarrow.png) no-repeat center center;background-size: 130%;"></div>
+						<div class="TopPositionsCover"></div>
+						<div class="TopPositionsPanel" style="height:65px;">3</div>
+					</div>
+				</div>
+				<div class="RankingResetText">Ranking resets 2 days</div>
+				<div class="RankingList RankingListFriendly"></div>
+				<div class="SelectRankingList">
+					<div class="select select--white">
+						<span class="placeholder">Kickflip tournie</span>
+						<ul>
+							<li>Kickflip tournie</li>
+							<li>Collection battle</li>
+							<li>Game of SKATE</li>
+							<li>XP tournament</li>
+						</ul>
+					</div>
+					<div class="RankingInfoButtonRed" onclick="SwitchFriendlyScreen('create');"><div class="PlusIcon WhiteFill"><div data-include="Icons/plus.svg"></div></div></div>
+				</div>
+			</div>
+			<div id="CreationScreen">
+				<div class="CreationWrapper">
+					<div class="CreationTitleWrapper">General</div>
+					<div class="CreationInputText">Competition name:</div>
+					<div class="CreationInputContainer"><input class="CreationInput" type="text" value="Kickflip Tournie"></div>
+					<div class="CreationInputText">Competition type:</div>
+					<div class="CreationSelectWrapper">
+						<select>
+							<option selected>Kickflip Battle</option>
+							<option>Ollie Battle</option>
+							<option>Heelflip Battle</option>
+							<option>Fakie Battle</option>
+							<option>XP Battle</option>
+							<option>Collection Battle</option>
+						</select>
+					</div>
+					<div class="CreationSubtext">Land as many Kickflips as possible, highest wins.</div>
+					<br />
+					<div class="CreationToggleTimeWrapper">
+						<div class="CreationInputText" style="width: 60%;">Set end time:</div>
+						<div class="CreationSwitchContainer">
+							<label class="switch" for="checkbox">
+								<input type="checkbox" id="checkbox" checked />
+								<div class="slider round"></div>
+							</label>
+						</div>
+					</div>
+					<div class="CreationSubtext">The competition ends in 2 weeks. Turn off for an endless competition.</div>
+					<br />
+					<div class="CreationTitleWrapper">Invite</div>
+<!-- 					<div class="CreationInputText">Add from friendslist:</div>
+					<div class="CreationButtonRed" onclick="SwitchFriendlyScreen('create');"><div class="PlusIcon WhiteFill"><div data-include="Icons/plus.svg"></div></div></div>
+					<div class="CreationSubtext" style="width: 80%;">Added: Roy Lindsey, Alec Hudson, Orson Marrow, Adrian Norman, Tyler Dean, Johnny Blake, and 2 more..</div> -->
+					<div class="CreationInputText">Share invite link:</div>
+					<div class="CreationInputContainer"><input class="CreationInput" type="text" value="skatt.rix/Gh6k21"></div>
+					<br />
+					<div class="CreationSubmitButton">Start Competition</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-include="_footer.html"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/Main.js"></script>
+	<script type="text/javascript" src="JS/csi.min.js"></script>
+</body>
+</html>

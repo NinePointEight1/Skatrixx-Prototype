@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SKATRIXX</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content="Noah V. Schijndel"/>
+	<meta name="copyright" content=""/>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+	<link href="CSS\Design.css" type="text/css" rel="stylesheet" id="NormalStyle"/>
+	<link href="CSS\normalize.css" type="text/css" rel="stylesheet" />
+	<link href="CSS\override.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="MenuHeader">
+		<div class="MenuWrapper">
+			<div class="MenuItemActive" onclick="SelectItem(this, 'Session');">Session</div>
+			<div class="MenuItem" onclick="SelectItem(this, 'Knowledge');">Knowledge</div>
+		</div>
+	</div>
+	<div class="RedBlockTop"></div>
+	<div class="MainDiv">
+		<div id="Session" class="active">
+			<div class="UserSection">
+				<div class="UserSectionImage" onclick="window.location.assign('user.html');"></div>
+				<div class="UserSectionName">Mark Rivello</div>
+				<div class="UserSectionProgressBar"><div class="UserSectionProgress"></div></div>
+				<div class="UserSectionInfo">
+					<div class="UserSectionInfoSection" style="text-align: left;">
+						<div class="UserSectionInfoRank">#56</div>
+					</div>
+					<div class="UserSectionInfoSection" style="text-align: right;">
+						<div class="UserSectionInfoXP">2350 XP &#9733;</div>
+					</div>
+				</div>
+			</div>
+			<div id="SessionMeasurements">
+				<div class="SessionDivLeft">
+					<div class="SessionIcon WhiteFill"><div data-include="Icons/measurements/speed.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="SpeedMeasurement Measurement">39</div>
+						<div class="MeasurementTitle">Speed</div>
+					</div>
+				</div>
+				<div class="SessionDivRight">
+					<div class="SessionIcon WhiteFill"><div data-include="Icons/measurements/height.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="HeightMeasurement Measurement">1.9</div>
+						<div class="MeasurementTitle">Height</div>
+					</div>
+				</div>
+				<div class="SessionDivLeft">
+					<div class="SessionIcon WhiteFill"><div data-include="Icons/measurements/balance.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="BalanceMeasurement Measurement">40</div>
+						<div class="MeasurementTitle">Balance</div>
+					</div>
+				</div>
+				<div class="SessionDivRight">
+					<div class="SessionIcon WhiteFill"><div data-include="Icons/measurements/airtime.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="AirtimeMeasurement Measurement">2.4</div>
+						<div class="MeasurementTitle">Airtime</div>
+					</div>
+				</div>
+				<div class="SessionDivLeft">
+					<div class="SessionIcon WhiteFill"><div data-include="Icons/measurements/hrotation.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="HRotationTitle1">Horizontal</div>
+						<div class="HRotationMeasurement Measurement">127&#176;</div>
+						<div class="HRotationTitle2">Rotation</div>
+					</div>
+				</div>
+				<div class="SessionDivRight">
+					<div class="SessionIcon WhiteFill"><div data-include="Icons/measurements/vrotation.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="VRotationTitle1">Vertical</div>
+						<div class="VRotationMeasurement Measurement">371&#176;</div>
+						<div class="VRotationTitle2">Rotation</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="GeneralSubmitButton">Start</div>
+			<div id="SwipeMessage">Swipe up for previous measurements</div>
+			<div id="BlurredBackground">
+				<div id="MeasurementWrapper">
+					<a class="buttons prev" href="#" onclick="GenerateMeasurements();"><</a>
+					<ul class="card-list">
+						<li class="card"></li>
+						<li class="card"></li>
+						<li class="card"></li>
+					</ul>	
+					<a class="buttons next" href="#" onclick="GenerateMeasurements();">></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="Knowledge">
+			<div class="UserSection">
+				<div class="UserSectionImage" onclick="window.location.assign('user.html');"></div>
+				<div class="UserSectionName">Mark Rivello</div>
+				<div class="UserSectionProgressBar"><div class="UserSectionProgress"></div></div>
+				<div class="UserSectionInfo">
+					<div class="UserSectionInfoSection" style="text-align: left;">
+						<div class="UserSectionInfoRank">#56</div>
+					</div>
+					<div class="UserSectionInfoSection" style="text-align: right;">
+						<div class="UserSectionInfoXP">2350 XP &#9733;</div>
+					</div>
+				</div>
+			</div>
+			<div id="KnowledgeNavigationSection">
+				<div class="GeneralSearchContainer">
+					<div class="SearchBarWrapper">
+						<input class="SearchBar" type="text" placeholder="Search Trick...">
+					</div>
+					<div class="SearchIconWrapper">
+						<div class="SearchIconBackground"><div class="SearchIcon"></div></div>
+					</div>
+				</div>
+				<div id="JumpToContainer">
+					<span>Jump to:</span>
+					<div id="JumpToWrapper">
+						<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeBeginner');"><div class="BeginnerIcon WhiteFill"><div data-include="Icons/medals/beginner.svg"></div></div></div>
+						<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeIntermediate');"><div class="IntermediateIcon WhiteFill"><div data-include="Icons/medals/intermediate.svg"></div></div></div>
+						<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeExpert');"><div class="ExpertIcon WhiteFill"><div data-include="Icons/medals/expert.svg"></div></div></div>
+						<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeMaster');"><div class="MasterIcon WhiteFill"><div data-include="Icons/medals/master.svg"></div></div></div>
+						<div class="JumpToText">Beginner</div>
+						<div class="JumpToText">Intermediate</div>
+						<div class="JumpToText">Expert</div>
+						<div class="JumpToText">Master</div>
+					</div>
+				</div>
+			</div>
+			<div class="KnowledgeSectionRed" id="KnowledgeBeginner">
+				<div class="KnowledgeWrapper">
+					<div class="KnowledgeInfoContainer">
+						<div class="KnowledgeInfoLogo"><div class="BeginnerIcon WhiteFill"><div data-include="Icons/medals/beginner.svg"></div></div></div>
+						<div class="KnowledgeInfoTitle">Beginner<br /><span>Completed: 0/5</span></div>
+						<div class="KnowledgeInfoButtonWhite"><div class="PlusIcon BlackFill"><div data-include="Icons/plus.svg"></div></div></div>
+					</div>
+					<div class="KnowledgeSwipeText">Swipe the skateboard to register the trick completed.</div>
+					<div class="KnowledgeTricksContainer">
+						<div class="TrickWrapper">
+							<div class="TrickName">Manual</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Tic-Tac</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Fakie</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Kickturn</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Ollie</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="KnowledgeSectionWhite" id="KnowledgeIntermediate">
+				<div class="KnowledgeWrapper">
+					<div class="KnowledgeInfoContainer">
+						<div class="KnowledgeInfoButtonRed"><div class="PlusIcon WhiteFill"><div data-include="Icons/plus.svg"></div></div></div>
+						<div class="KnowledgeInfoTitle">Intermediate<br /><span>Completed: 0/6</span></div>
+						<div class="KnowledgeInfoLogo"><div class="IntermediateIcon BlackFill"><div data-include="Icons/medals/intermediate.svg"></div></div></div>
+					</div>
+					<div class="KnowledgeSwipeText" style="color:black">Swipe the skateboard to register the trick completed.</div>
+					<div class="KnowledgeTricksContainer">
+						<div class="TrickWrapper">
+							<div class="TrickName">Kickflip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Heelflip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">FS 50-50</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">BS 50-50</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Nollie</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Switch Ollie</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="KnowledgeSectionRed" id="KnowledgeExpert">
+				<div class="KnowledgeWrapper">
+					<div class="KnowledgeInfoContainer">
+						<div class="KnowledgeInfoLogo"><div class="ExpertIcon WhiteFill"><div data-include="Icons/medals/expert.svg"></div></div></div>
+						<div class="KnowledgeInfoTitle">Expert<br /><span>Completed: 0/8</span></div>
+						<div class="KnowledgeInfoButtonWhite"><div class="PlusIcon BlackFill"><div data-include="Icons/plus.svg"></div></div></div>
+					</div>
+					<div class="KnowledgeSwipeText">Swipe the skateboard to register the trick completed.</div>
+					<div class="KnowledgeTricksContainer">
+						<div class="TrickWrapper">
+							<div class="TrickName">Nollie Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Switch Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">180 Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">360 Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Smith Grind</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Feeble Grind</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Lipslide</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Nosegrind</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="KnowledgeSectionWhite" id="KnowledgeMaster">
+				<div class="KnowledgeWrapper">
+					<div class="KnowledgeInfoContainer">
+						<div class="KnowledgeInfoButtonRed"><div class="PlusIcon WhiteFill"><div data-include="Icons/plus.svg"></div></div></div>
+						<div class="KnowledgeInfoTitle">Master<br /><span>Completed: 0/4</span></div>
+						<div class="KnowledgeInfoLogo"><div class="MasterIcon BlackFill"><div data-include="Icons/medals/master.svg"></div></div></div>
+					</div>
+					<div class="KnowledgeSwipeText" style="color:black">Swipe the skateboard to register the trick completed.</div>
+					<div class="KnowledgeTricksContainer">
+						<div class="TrickWrapper">
+							<div class="TrickName">Gazelle Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Impossible</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">1440 Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+						<div class="TrickWrapper">
+							<div class="TrickName">Laser Flip</div>
+							<div class="TrickSwipeboard"><div class="TrickDate">9-12-2020</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-include="_footer.html"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/Main.js"></script>
+	<script type="text/javascript" src="JS/csi.min.js"></script>
+	<script></script>
+</body>
+</html>
