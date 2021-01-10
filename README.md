@@ -6,7 +6,7 @@ Created by: Noah van Schijndel.
 This is a clickable prototype for the Skatrixx Project @ USPC.
 
 
-**WARNING** This project might not be finished yet. It could contain catastrophic bugs or errors.
+**WARNING:** This project might not be finished yet. It could contain catastrophic bugs or errors.
 
 ## Installation
 Download / link git repository and locate to folder which allows a local server environment.
