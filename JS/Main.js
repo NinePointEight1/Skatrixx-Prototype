@@ -286,3 +286,10 @@ $('.select').on('click','.placeholder',function(){
 	var parent = $(this).closest('.select');
 	parent.removeClass('is-open').find('.placeholder').text( $(this).text() );
 });
+
+
+$(".BadgeImage").on("click", function() {
+	 var popup = $(this).find(".popuptext");
+	 $(".popuptext").removeClass("show");
+	 popup.toggleClass("show");
+})

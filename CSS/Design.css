@@ -1502,53 +1502,53 @@ html, body {
 }
 
 .switch {
-  display: inline-block;
-  height: 20px;
-  position: relative;
-  width: 45px;
-  float: right;
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	width: 45px;
+	float: right;
 }
 
 .switch input {
-  display:none;
+	display:none;
 }
 
 .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
 }
 
 .slider:before {
-  background-color: #fff;
-  bottom: -3px;
-  content: "";
-  height: 26px;
-  left: -3px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
+	background-color: #fff;
+	bottom: -3px;
+	content: "";
+	height: 26px;
+	left: -3px;
+	position: absolute;
+	transition: .4s;
+	width: 26px;
 }
 
 input:checked + .slider {
-  background-color: var(--mainred);
+	background-color: var(--mainred);
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 .slider.round {
-  border-radius: 34px;
+	border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 .CreationButtonRed {
@@ -1562,16 +1562,218 @@ input:checked + .slider:before {
 }
 
 .CreationSubmitButton {
-    height: auto;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--mainred);
-    font-family: 'Heavitas', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--mainwhite);
-    font-size: 20px;
-    line-height: 2;
+	height: auto;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--mainred);
+	font-family: 'Heavitas', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--mainwhite);
+	font-size: 20px;
+	line-height: 2;
+}
+
+/* ----- COLLECTION ----- */
+.LoyaltyIcon {
+	height: 100%;
+	width: 100%;
+	background: url(Images/Wheel1.png) no-repeat center center;
+	background-size: 90%;
+}
+.TrickMasterIcon {
+	height: 100%;
+	width: 100%;
+	background: url(Images/Wheel2.png) no-repeat center center;
+	background-size: 90%;
+}
+.CompetitiveIcon {
+	height: 100%;
+	width: 100%;
+	background: url(Images/Wheel4.png) no-repeat center center;
+	background-size: 90%;
+}
+.ChallengesIcon {
+	height: 100%;
+	width: 100%;
+	background: url(Images/Wheel9.png) no-repeat center center;
+	background-size: 90%;
+}
+
+.CollectionSectionRed {
+	height: auto;
+	min-height: 300px;
+	width: 150%;
+	margin-left: -25%;
+	color: var(--mainwhite);
+	background-color: var(--mainred);
+	transform: rotate(5deg);
+	margin-bottom: 10%;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+}
+.CollectionSectionRed > * {
+	transform: rotate(-5deg);
+}
+
+.CollectionSectionWhite {
+	height: auto;
+	min-height: 300px;
+	width: 150%;
+	margin-left: -25%;
+	color: var(--textcolor);
+	background-color: var(--mainwhite);
+	transform: rotate(-5deg);
+	margin-bottom: 10%;
+	text-align: right;
+	display: flex;
+	justify-content: center;
+}
+.CollectionSectionWhite > * {
+	transform: rotate(5deg);
+}
+
+.CollectionWrapper {
+	height: auto;
+	width: 65%;
+}
+
+.CollectionInfoContainer {
+	height: auto;
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: flex;
+}
+
+.CollectionInfoTitle {
+	width: 65%;
+	height: auto;
+	font-family: 'Heavitas', sans-serif;
+	font-size: 28px;
+	line-height: 1;
+	margin-left: 5%;
+}
+.CollectionInfoTitle > span {
+	font-family: 'OpenSansRegular', sans-serif;
+	font-size: 20px;
+}
+
+.CollectionContainer {
+	height: auto;
+	width: 100%;
+	padding-bottom: 5%;
+	font-family: 'OpenSansBold', sans-serif;
+	font-size: 20px;
+}
+
+.BadgeWrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.BadgeImage {
+	height: 80px;
+	width: 80px;
+	margin-left: 1%;
+	margin-right: 2%;
+	opacity: 0.3;
+}
+
+.Collected {
+	opacity: 1!important;
+}
+
+.BadgeText {
+	width: 80px;
+	margin-left: 1%;
+	margin-right: 2%;
+	text-align: center;
+	font-family: 'OpenSansRegular', sans-serif;
+	font-size: 12px;
+	padding-bottom: 15px;
+	opacity: 0.3;
+}
+
+.BadgeImage {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.BadgeImage .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: var(--mainwhite);
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	color: var(--textcolor);
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	bottom: 110%;
+	left: 100%;
+	margin-left: -80px;
+	font-family: 'OpenSansRegular', sans-serif;
+	font-size: 15px;
+}
+
+.BadgeImage .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 25%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+}
+
+.BadgeImage .show {
+	visibility: visible;
+}
+
+#Wheel1 {
+	background: url(Images/Wheel1.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel2 {
+	background: url(Images/Wheel2.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel3 {
+	background: url(Images/Wheel3.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel4 {
+	background: url(Images/Wheel4.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel5 {
+	background: url(Images/Wheel5.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel6 {
+	background: url(Images/Wheel6.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel7 {
+	background: url(Images/Wheel7.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel8 {
+	background: url(Images/Wheel8.png) no-repeat center center;
+	background-size: contain;
+}
+#Wheel9 {
+	background: url(Images/Wheel9.png) no-repeat center center;
+	background-size: contain;
 }

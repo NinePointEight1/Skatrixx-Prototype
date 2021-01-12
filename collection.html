@@ -40,28 +40,134 @@
 			<div id="JumpToContainer">
 				<span>Jump to:</span>
 				<div id="JumpToWrapper">
-					<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeBeginner');"><div class="BeginnerIcon WhiteFill"><div data-include="Icons/medals/beginner.svg"></div></div></div>
-					<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeIntermediate');"><div class="IntermediateIcon WhiteFill"><div data-include="Icons/medals/intermediate.svg"></div></div></div>
-					<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeExpert');"><div class="ExpertIcon WhiteFill"><div data-include="Icons/medals/expert.svg"></div></div></div>
-					<div class="JumpTo" onclick="ScrollToKnowledge('KnowledgeMaster');"><div class="MasterIcon WhiteFill"><div data-include="Icons/medals/master.svg"></div></div></div>
-					<div class="JumpToText">Beginner</div>
-					<div class="JumpToText">Intermediate</div>
-					<div class="JumpToText">Expert</div>
-					<div class="JumpToText">Master</div>
+					<div class="JumpTo" onclick="ScrollToKnowledge('CollectionLoyalty');"><div class="LoyaltyIcon"></div></div>
+					<div class="JumpTo" onclick="ScrollToKnowledge('CollectionTrickMaster');"><div class="TrickMasterIcon"></div></div>
+					<div class="JumpTo" onclick="ScrollToKnowledge('CollectionCompetitive');"><div class="CompetitiveIcon"></div></div>
+					<div class="JumpTo" onclick="ScrollToKnowledge('CollectionChallenges');"><div class="ChallengesIcon"></div></div>
+					<div class="JumpToText">Loyalty</div>
+					<div class="JumpToText">Trick Master</div>
+					<div class="JumpToText">Competitive</div>
+					<div class="JumpToText">Challenges</div>
 				</div>
 			</div>
 		</div>
-		<div class="KnowledgeSectionRed" id="KnowledgeBeginner">
-
+		<div class="CollectionSectionRed" id="CollectionLoyalty">
+			<div class="CollectionWrapper">
+				<div class="CollectionInfoContainer">
+					<div class="CollectionInfoTitle">Loyalty<br /><span>Collected: 3/8</span></div>
+				</div>
+				<div class="CollectionContainer">
+					<div class="BadgeWrapper">
+						<div class="BadgeImage Collected" id="Wheel1"><span class="popuptext" id="Popup">Login for the first time.<br />+150 XP</span></div>
+						<div class="BadgeImage Collected" id="Wheel3"><span class="popuptext" id="Popup">Login 7 days in a row.<br />+250 XP</span></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeText Collected">First Day</div>
+						<div class="BadgeText Collected">First Week</div>
+						<div class="BadgeText">First Month</div>
+						<div class="BadgeText">First Year</div>
+					</div>
+					<div class="BadgeWrapper">
+						<div class="BadgeImage Collected" id="Wheel1"><span class="popuptext" id="Popup">Verify your account.<br />+1.000 XP</span></div>
+						<div class="BadgeImage" id="Wheel3"></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeText Collected">Verified</div>
+						<div class="BadgeText">Look at me!</div>
+						<div class="BadgeText">Challenged</div>
+						<div class="BadgeText">Ranked</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="KnowledgeSectionWhite" id="KnowledgeIntermediate">
-
+		<div class="CollectionSectionWhite" id="CollectionTrickMaster">
+			<div class="CollectionWrapper">
+				<div class="CollectionInfoContainer">
+					<div class="CollectionInfoTitle" style="margin-left: 30%;">Trick Master<br /><span>Collected: 6/10</span></div>
+				</div>
+				<div class="CollectionContainer">
+					<div class="BadgeWrapper">
+						<div class="BadgeImage Collected" id="Wheel2"><span class="popuptext" id="Popup">Perform 1 kickflip.<br />+50 XP</span></div>
+						<div class="BadgeImage Collected" id="Wheel7"><span class="popuptext" id="Popup">Perform 5 kickflips.<br />+150 XP</span></div>
+						<div class="BadgeImage" id="Wheel9"></div>
+						<div class="BadgeImage" id="Wheel7"></div>
+						<div class="BadgeText Collected">Kickflip Pro I</div>
+						<div class="BadgeText Collected">Kickflip Pro II</div>
+						<div class="BadgeText">Kickflip Pro III</div>
+						<div class="BadgeText">Kickflip Pro IV</div>
+					</div>
+					<div class="BadgeWrapper">
+						<div class="BadgeImage" id="Wheel2"></div>
+						<div class="BadgeImage Collected" id="Wheel7"><span class="popuptext" id="Popup">Perform 1 ollie.<br />+50 XP</span></div>
+						<div class="BadgeImage Collected" id="Wheel9"><span class="popuptext" id="Popup">Perform 5 ollies.<br />+150 XP</span></div>
+						<div class="BadgeImage Collected" id="Wheel7"><span class="popuptext" id="Popup">Perform 10 ollies.<br />+350 XP</span></div>
+						<div class="BadgeText">Kickflip Pro V</div>
+						<div class="BadgeText Collected">Ollie Pro I</div>
+						<div class="BadgeText Collected">Ollie Pro II</div>
+						<div class="BadgeText Collected">Ollie Pro III</div>
+					</div>
+					<div class="BadgeWrapper" style="width: 50%;">
+						<div class="BadgeImage Collected" id="Wheel2"><span class="popuptext" id="Popup">Perform 50 ollies.<br />+1.500 XP</span></div>
+						<div class="BadgeImage" id="Wheel7"></div>
+						<div class="BadgeText Collected">Ollie Pro IV</div>
+						<div class="BadgeText">Ollie Pro V</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="KnowledgeSectionRed" id="KnowledgeExpert">
-
+		<div class="CollectionSectionRed" id="CollectionCompetitive">
+			<div class="CollectionWrapper">
+				<div class="CollectionInfoContainer">
+					<div class="CollectionInfoTitle">Competitive<br /><span>Collected: 3/8</span></div>
+				</div>
+				<div class="CollectionContainer">
+					<div class="BadgeWrapper">
+						<div class="BadgeImage Collected" id="Wheel1"><span class="popuptext" id="Popup">Participate in a tournament.<br />+1.000 XP</span></div>
+						<div class="BadgeImage Collected" id="Wheel3"><span class="popuptext" id="Popup">Participate in 5 tournaments.<br />+1.000 XP</span></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeText Collected">Tournament Master I</div>
+						<div class="BadgeText Collected">Tournament Master II</div>
+						<div class="BadgeText">Tournament Master III</div>
+						<div class="BadgeText">Tournament Master IV</div>
+					</div>
+					<div class="BadgeWrapper">
+						<div class="BadgeImage" id="Wheel1"></div>
+						<div class="BadgeImage Collected" id="Wheel3"><span class="popuptext" id="Popup">Get in the top 100 of the global leaderboards.<br />+10.000 XP</span></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeImage" id="Wheel5"></div>
+						<div class="BadgeText">Tournament Master V</div>
+						<div class="BadgeText Collected">Top 100</div>
+						<div class="BadgeText">Top 50</div>
+						<div class="BadgeText">Top 10</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="KnowledgeSectionWhite" id="KnowledgeMaster">
-
+		<div class="CollectionSectionWhite" id="CollectionChallenges" style="margin-bottom: 100px;">
+			<div class="CollectionWrapper">
+				<div class="CollectionInfoContainer">
+					<div class="CollectionInfoTitle" style="margin-left: 30%;">Challenges<br /><span>Collected: 2/6</span></div>
+				</div>
+				<div class="CollectionContainer">
+					<div class="BadgeWrapper">
+						<div class="BadgeImage Collected" id="Wheel6"><span class="popuptext" id="Popup">Create a friendly tournament<br />+1.000 XP</span></div>
+						<div class="BadgeImage Collected" id="Wheel8"><span class="popuptext" id="Popup">Accept an invite to a tournament<br />+1.000 XP</span></div>
+						<div class="BadgeImage" id="Wheel4"></div>
+						<div class="BadgeImage" id="Wheel2"></div>
+						<div class="BadgeText Collected">Matched up!</div>
+						<div class="BadgeText Collected">Game on!</div>
+						<div class="BadgeText">10x Challenges</div>
+						<div class="BadgeText">25x Challenges</div>
+					</div>
+					<div class="BadgeWrapper" style="width: 50%;">
+						<div class="BadgeImage" id="Wheel6"></div>
+						<div class="BadgeImage" id="Wheel7"></div>
+						<div class="BadgeText">50x Challenges</div>
+						<div class="BadgeText">100x Challenges</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div data-include="_footer.html"></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
