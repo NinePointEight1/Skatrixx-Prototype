@@ -10,6 +10,7 @@ window.onload = function() {
 $(document).ready(function() {
 	GenerateMeasurements();
 	LoadLeaderboards();
+	LoadFriends();
 });
 
 //This function is called in csi.min.js - Do not change.
@@ -293,3 +294,22 @@ $(".BadgeImage").on("click", function() {
 	 $(".popuptext").removeClass("show");
 	 popup.toggleClass("show");
 })
+
+function LoadFriends() {
+	var dq = '"';
+	var htmlstring = '';
+	var namesi = Array("Kaiden Ruiz", "Bob Hastings", "Robson Haynes", "Johnny Blake", "Arwen Baldwin", "James Young", "Alex Avel", "Roy Lindsey", "Alec Hudson", "Orson Marrow", "Adrian Norman", "Tyler Dean");
+	var imagesi = Array("KaidenRuiz.png", "BobHastings.png", "RobsonHaynes.png", "JohnnyBlake.png", "ArwenBaldwin.png", "JamesYoung.png", "AlexAvel.png", "RoyLindsey.png", "AlecHudson.png", "OrsonMarrow.png", "AdrianNorman.png", "TylerDean.png");
+	//Country leaderboard (Landing Page)
+	$(".RankingListFriends").empty();
+	for (var i = 0; i < namesi.length; i++) {
+		htmlstring += '<div class="PlayerRankWrapper">\
+		<div class="PlayerRankImage" style="background: url(CSS/Images/'+ imagesi[i] +') no-repeat center center;"></div>\
+		<div class="PlayerRankContainer">\
+		<div class="PlayerRankName">'+ namesi[i] +'</div>\
+		<div class="PlayerRankXP">10.450 XP &#9733;</div>\
+		</div>\
+		<div class="PlayerRankPosition NL"></div></div>';
+	}
+	$(".RankingListFriends").append(htmlstring);
+}

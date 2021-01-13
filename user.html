@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SKATRIXX</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content="Noah V. Schijndel"/>
+	<meta name="copyright" content=""/>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+	<link href="CSS\Design.css" type="text/css" rel="stylesheet" id="NormalStyle"/>
+	<link href="CSS\normalize.css" type="text/css" rel="stylesheet" />
+	<link href="CSS\override.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="MenuHeader">
+		<div class="MenuWrapper">
+			<div class="MenuItem" onclick="SelectItem(this, 'Settings');">Settings</div>
+			<div class="MenuItemActive" onclick="SelectItem(this, 'Statistics');">Statistics</div>
+			<div class="MenuItem" onclick="SelectItem(this, 'Friends');">Friends</div>
+		</div>
+	</div>
+	<div class="RedBlockTop"></div>
+	<div class="MainDiv">
+		<div id="Settings">
+			<div class="UserSection">
+				<div class="UserSectionImageEdit"></div>
+			</div>
+			<div class="CreationWrapper" style="margin-top: -20%;">
+				<div class="CreationTitleWrapper">General</div>
+				<div class="SettingsInputText">Display name:</div>
+				<div class="SettingsInputContainer">
+					<input class="GeneralInput" type="text" placeholder="Mark Rivello">
+					<div class="IconContainer">
+						<div class="user"></div>
+					</div>
+				</div>
+				<div class="SettingsInputText">Email address:</div>
+				<div class="SettingsInputContainer">
+					<input class="GeneralInput" type="text" placeholder="markrivello43@gmail.com">
+					<div class="IconContainer">
+						<div class="email"></div>
+					</div>
+				</div>
+				<div class="CreationTitleWrapper">Password</div>
+				<div class="SettingsInputText">Change password:</div>
+				<div class="SettingsInputContainer">
+					<input class="GeneralInput" type="password" placeholder="••••••••••••">
+					<div class="IconContainer">
+						<div class="password"></div>
+					</div>
+				</div>
+				<div class="SettingsInputText">Repeat password:</div>
+				<div class="SettingsInputContainer">
+					<input class="GeneralInput" type="password" placeholder="••••••••••••">
+					<div class="IconContainer">
+						<div class="password"></div>
+					</div>
+				</div>
+				<br />
+				<div class="CreationTitleWrapper">Notifications</div>
+				<div class="CreationToggleTimeWrapper" style="padding-bottom:10px;">
+					<div class="CreationInputText" style="width: 60%;">General:</div>
+					<div class="CreationSwitchContainer">
+						<label class="switch" for="checkbox">
+							<input type="checkbox" id="checkbox" checked />
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>
+				<div class="CreationToggleTimeWrapper" style="padding-bottom:10px;">
+					<div class="CreationInputText" style="width: 60%;">News:</div>
+					<div class="CreationSwitchContainer">
+						<label class="switch" for="checkbox">
+							<input type="checkbox" id="checkbox" checked />
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>
+				<div class="CreationToggleTimeWrapper" style="padding-bottom:10px;">
+					<div class="CreationInputText" style="width: 60%;">Ranking:</div>
+					<div class="CreationSwitchContainer">
+						<label class="switch" for="checkbox">
+							<input type="checkbox" id="checkbox" />
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Statistics" class="active">
+			<div class="UserSection">
+				<div class="UserSectionImage"></div>
+				<div class="UserSectionName">Mark Rivello</div>
+				<div class="UserSectionProgressBar"><div class="UserSectionProgress"></div></div>
+				<div class="UserSectionInfo">
+					<div class="UserSectionInfoSection" style="text-align: left;">
+						<div class="UserSectionInfoRank">#56</div>
+					</div>
+					<div class="UserSectionInfoSection" style="text-align: right;">
+						<div class="UserSectionInfoXP">2350 XP &#9733;</div>
+					</div>
+				</div>
+			</div>
+			<div id="SessionMeasurements" style="padding-bottom: 0;">
+				<div class="SessionDivLeft">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/time.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="TimeStatistic Statistic">539</div>
+						<div class="StatisticTitle">Skated</div>
+					</div>
+				</div>
+				<div class="SessionDivRight">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/measurements/airtime.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="JumpsStatistic Measurement">2651</div>
+						<div class="StatisticTitle">Jumps</div>
+					</div>
+				</div>
+				<div class="SessionDivLeft">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/globe.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="TravelStatistic Measurement">1831</div>
+						<div class="StatisticTitle">Traveled</div>
+					</div>
+				</div>
+				<div class="SessionDivRight">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/light.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="TrickStatistic Measurement">28</div>
+						<div class="StatisticTitle">Learned</div>
+					</div>
+				</div>
+				<div class="SessionDivLeft">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/menu/flag.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="ChallengeStatistic Measurement">41</div>
+						<div class="StatisticTitle" style="line-height:1;margin-top:10px;">Challenges Played</div>
+					</div>
+				</div>
+				<div class="SessionDivRight">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/menu/trophy.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="RankStatistic Measurement">56</div>
+						<div class="StatisticTitle" style="line-height:1;margin-top:10px;">Highest Rank Achieved</div>
+					</div>
+				</div>
+				<div class="SessionDivCenter">
+					<div class="StatisticsIcon WhiteFill"><div data-include="Icons/menu/medal.svg"></div></div>
+					<div class="SessionWrapper">
+						<div class="CollectionStatistic Measurement">14</div>
+						<div class="StatisticTitle" style="line-height:1;margin-top:10px;">Wheels Collected</div>
+					</div>
+				</div>
+			</div>
+			<a href="collection.html" style="text-decoration: none;"><div class="CreationSubmitButton">View Collection</div></a>
+		</div>
+
+		<div id="Friends">
+			<div class="UserSection">
+				<div class="UserSectionImage"></div>
+				<div class="UserSectionName">Mark Rivello</div>
+				<div class="UserSectionProgressBar"><div class="UserSectionProgress"></div></div>
+				<div class="UserSectionInfo">
+					<div class="UserSectionInfoSection" style="text-align: left;">
+						<div class="UserSectionInfoRank">#56</div>
+					</div>
+					<div class="UserSectionInfoSection" style="text-align: right;">
+						<div class="UserSectionInfoXP">2350 XP &#9733;</div>
+					</div>
+				</div>
+			</div>
+			<div class="RankingResetText">Click on a name to view their profile</div>
+			<div class="RankingList RankingListFriends"></div>
+			<div class="GeneralSubmitButton">Add friend</div>
+		</div>
+	</div>
+	<div data-include="_footer.html"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/Main.js"></script>
+	<script type="text/javascript" src="JS/csi.min.js"></script>
+	<script></script>
+</body>
+</html>

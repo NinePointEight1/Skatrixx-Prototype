@@ -6,7 +6,7 @@
 	--textcolor: #101010;
 	--subtext: #B5B5B5;
 	--placeholder: #828282;
-	--gradient: #2B2B2B;
+	--gradient: #1d1d1d;
 }
 
 @font-face {
@@ -1776,4 +1776,133 @@ input:checked + .slider:before {
 #Wheel9 {
 	background: url(Images/Wheel9.png) no-repeat center center;
 	background-size: contain;
+}
+
+
+/* ----- PROFILE ----- */
+#Settings {
+	display: none;
+}
+#Statistics {
+	display: none;
+}
+#Friends {
+	display: none;
+}
+
+.SessionDivCenter {
+	width: 60%;
+	height: 100px;
+	display: flex;	
+	align-items:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.StatisticsIcon	{
+	display: flex;	
+	height: 100%;
+	width: 30%;
+}
+.StatisticsIcon > svg {
+	height: 100%;
+	transform: scale(0.7);
+}
+
+.Statistic {
+	width: 100%;
+	height: 50%;
+	float: left;
+	font-family: 'Heavitas', sans-serif;
+	color: var(--mainred);
+	font-size: 32px;
+}
+
+.StatisticTitle {
+	width: 100%;
+	height: 50%;
+	float: left;
+	font-family: 'Heavitas', sans-serif;
+	color: var(--mainwhite);
+	font-size: 15px;
+	line-height: 2;
+}
+
+.TimeStatistic:after {
+	content: " hours";
+	text-transform: uppercase;
+	font-family: 'Heavitas', sans-serif;
+	color: var(--mainwhite);
+	font-size: 14px;
+}
+
+.JumpsStatistic:after {
+	content: "";
+}
+
+.TravelStatistic:after {
+	content: " KM";
+	text-transform: uppercase;
+	font-family: 'Heavitas', sans-serif;
+	color: var(--mainwhite);
+	font-size: 14px;
+}
+
+.TrickStatistic:after {
+	content: " Tricks";
+	text-transform: uppercase;
+	font-family: 'Heavitas', sans-serif;
+	color: var(--mainwhite);
+	font-size: 14px;
+}
+
+.ChallengeStatistic:after {
+	content: "";
+}
+
+.RankStatistic:after {
+	content: "";
+}
+
+.CollectionStatistic:after {
+	content: " out of 75";
+	text-transform: uppercase;
+	font-family: 'Heavitas', sans-serif;
+	color: var(--mainwhite);
+	font-size: 15px;
+}
+
+.RankingListFriends {
+	height: 360px;
+	margin-bottom: 20px;
+	background-color: var(--gradient);
+}
+
+.UserSectionImageEdit {
+	height: 120px;
+	width: 120px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(Images/MarkrivelloEdit.png) no-repeat center center;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.SettingsInputContainer {
+	position: relative;
+	width: 85%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	left: -25px;
+}
+
+.SettingsInputText {
+	width: 100%;
+	font-family: 'OpenSansRegular', sans-serif;
+	font-size: 14px;
+	color: var(--subtext);
 }
